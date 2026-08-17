@@ -3,18 +3,20 @@ import type { NavLink, SocialLink, StatItem } from "@/types";
 export const siteConfig = {
   name: "Vishwa Ranthilina",
   shortName: "Vishwa",
-  role: "Development Manager · Full-Stack Developer",
+  role: "Founder, Lumora Labs · Full-Stack Developer",
   tagline: "Building Digital Experiences That Actually Work.",
   description:
-    "Development Manager & Full-Stack Web Developer focused on building scalable web applications, e-commerce platforms, integrations, and secure digital experiences.",
+    "Founder of Lumora Labs and Full-Stack Web Developer focused on building scalable web applications, e-commerce platforms, integrations, and secure digital experiences.",
   url: "https://vishwaranthilina.com",
   email: "ranthilinavishwa@gmail.com",
   phone: "+94 77 602 2098",
   whatsapp: "https://wa.me/94776022098",
-  location: "Peliyagoda, Sri Lanka",
+  location: "Colombo, Sri Lanka",
   availability: "Available for selected projects",
   keywords: [
     "Vishwa Ranthilina",
+    "Lumora Labs",
+    "Founder",
     "Development Manager",
     "Full Stack Developer",
     "Web Developer",

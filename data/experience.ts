@@ -2,17 +2,32 @@ import type { ExperienceEntry } from "@/types";
 
 export const experience: ExperienceEntry[] = [
   {
+    id: "lumora-labs-founder",
+    role: "Founder",
+    company: "Lumora Labs",
+    location: "Colombo, Sri Lanka",
+    period: "Aug 2025 — Present",
+    current: true,
+    summary:
+      "After leading development at Hype Insight Global, I founded Lumora Labs to build and ship software on my own terms — from client work to AI-powered products like MortgageGPT.",
+    achievements: [
+      "Own the full delivery pipeline — architecture, development, and client relationships — for every engagement.",
+      "Building MortgageGPT, an AI-powered mortgage assistant, alongside client and studio work.",
+      "Set the technical direction and brand for the studio from the ground up.",
+    ],
+    technologies: ["Next.js", "TypeScript", "OpenAI API", "System Architecture", "Client Delivery"],
+  },
+  {
     id: "dev-manager",
     role: "Development Manager",
     company: "Hype Insight Global",
-    period: "Jun 2024 — Present",
-    current: true,
+    period: "Jun 2024 — Aug 2025",
     summary:
-      "Leading the development function end to end — from resourcing and delivery timelines to the technical decisions that keep multiple client and product initiatives shipping in parallel.",
+      "Led the development function end to end — from resourcing and delivery timelines to the technical decisions that kept multiple client and product initiatives shipping in parallel.",
     achievements: [
-      "Lead and manage a team of developers, overseeing the design, implementation, and optimization of software solutions.",
-      "Drive project planning, resourcing, and delivery timelines across multiple concurrent client and product initiatives.",
-      "Own development coordination and project management, bridging technical teams and stakeholders.",
+      "Led and managed a team of developers, overseeing the design, implementation, and optimization of software solutions.",
+      "Drove project planning, resourcing, and delivery timelines across multiple concurrent client and product initiatives.",
+      "Owned development coordination and project management, bridging technical teams and stakeholders.",
     ],
     technologies: ["Development Coordination", "Project Management", "Team Leadership", "WordPress", "PHP"],
   },

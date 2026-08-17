@@ -11,7 +11,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Career Path"
           title="Seven years, one steady climb."
-          description="From intern to Development Manager — each role building the technical and leadership range for the next."
+          description="From intern to Development Manager to founder — each role building the technical and leadership range for the next."
         />
 
         <div className="relative mt-16">

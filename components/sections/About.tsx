@@ -28,13 +28,13 @@ export function About() {
             <Reveal delay={0.3}>
               <div className="mt-8 flex flex-wrap gap-3">
                 <span className="inline-flex items-center gap-2 rounded-full border border-bronze-500/25 bg-bronze-500/[0.06] px-4 py-1.5 text-xs font-medium text-bronze-200">
-                  <Sparkles size={13} /> Co-Founder, Lumora Labs
-                </span>
-                <span className="inline-flex items-center gap-2 rounded-full border border-ink-700 px-4 py-1.5 text-xs font-medium text-ink-400">
-                  Development Manager, Hype Insight Global
+                  <Sparkles size={13} /> Founder, Lumora Labs
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-bronze-500/25 bg-bronze-500/[0.06] px-4 py-1.5 text-xs font-medium text-bronze-200">
                   <Bot size={13} /> Building with AI — MortgageGPT
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-ink-700 px-4 py-1.5 text-xs font-medium text-ink-400">
+                  Formerly Development Manager, Hype Insight Global
                 </span>
               </div>
             </Reveal>

@@ -37,11 +37,11 @@ export function Leadership() {
               title="Builder and leader — not one instead of the other."
             />
             <p className="mt-6 text-pretty text-base leading-relaxed text-ink-400 sm:text-lg">
-              As a Development Manager, my job isn&rsquo;t just to write code — it&rsquo;s to make
-              sure the right code gets written, by the right people, on time. That means staying
-              close enough to the stack to make real architecture calls — including where AI
-              genuinely speeds delivery — while owning the planning and communication that keeps a
-              team moving in the same direction.
+              First as a Development Manager, now running Lumora Labs, my job has never just been
+              to write code — it&rsquo;s to make sure the right code gets written, by the right
+              people, on time. That means staying close enough to the stack to make real
+              architecture calls — including where AI genuinely speeds delivery — while owning the
+              planning and communication that keeps a team moving in the same direction.
             </p>
           </div>
 

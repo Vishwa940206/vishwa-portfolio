@@ -70,10 +70,10 @@ export const projects: Project[] = [
     category: "Enterprise Website",
     industry: "Technology · Own Venture",
     summary:
-      "A dark, terminal-aesthetic site for the studio I co-founded — canvas circuit animation, mouse-reactive parallax, and full technical SEO.",
+      "A dark, terminal-aesthetic site for the studio I founded — canvas circuit animation, mouse-reactive parallax, and full technical SEO.",
     description:
-      "Designed and built a dark, terminal-aesthetic single-page site for Lumora Labs, the studio I co-founded, featuring a canvas-based circuit animation, mouse-reactive parallax, and a technology marquee. Shipped with full SEO metadata and structured data for search visibility.",
-    role: "Co-Founder & Developer",
+      "Designed and built a dark, terminal-aesthetic single-page site for Lumora Labs, the studio I founded, featuring a canvas-based circuit animation, mouse-reactive parallax, and a technology marquee. Shipped with full SEO metadata and structured data for search visibility.",
+    role: "Founder & Developer",
     technologies: ["HTML5", "CSS3", "JavaScript", "Canvas API", "SEO"],
     highlights: [
       "Custom canvas circuit-board animation engine built from scratch",

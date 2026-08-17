@@ -13,10 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteTitle = `${siteConfig.name} — Founder, Lumora Labs & Full-Stack Developer`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Development Manager & Full-Stack Developer`,
+    default: siteTitle,
     template: `%s — ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -31,13 +33,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: `${siteConfig.name} — Development Manager & Full-Stack Developer`,
+    title: siteTitle,
     description: siteConfig.description,
     siteName: `${siteConfig.name} Portfolio`,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — Development Manager & Full-Stack Developer`,
+    title: siteTitle,
     description: siteConfig.description,
   },
   robots: {
@@ -63,13 +65,17 @@ const personJsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: siteConfig.name,
-  jobTitle: "Development Manager & Full-Stack Web Developer",
+  jobTitle: "Founder, Lumora Labs & Full-Stack Web Developer",
   url: siteConfig.url,
   email: `mailto:${siteConfig.email}`,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Peliyagoda",
+    addressLocality: "Colombo",
     addressCountry: "LK",
+  },
+  worksFor: {
+    "@type": "Organization",
+    name: "Lumora Labs",
   },
   sameAs: [
     "https://github.com/Vishwa940206",
@@ -81,6 +87,7 @@ const personJsonLd = {
     "Next.js",
     "WordPress Development",
     "Software Project Management",
+    "AI Integration",
     "Web Application Security",
   ],
 };
