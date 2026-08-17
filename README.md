@@ -1,6 +1,6 @@
-# Vishwa Ranthilina — Portfolio
+# Vishwa Jayathilaka — Portfolio
 
-Premium, dark-themed personal portfolio for **Vishwa Ranthilina**, Development Manager & Full-Stack Web Developer. Built with Next.js 16 (App Router), TypeScript, Tailwind CSS v4, and Framer Motion.
+Premium, dark-themed personal portfolio for **Vishwa Jayathilaka**, Founder of Lumora Labs & Full-Stack Web Developer. Built with Next.js 16 (App Router), TypeScript, Tailwind CSS v4, and Framer Motion.
 
 ## Stack
 
