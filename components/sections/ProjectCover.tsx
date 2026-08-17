@@ -8,6 +8,7 @@ import {
   Sparkles,
   Wrench,
   ShoppingCart,
+  Bot,
   type LucideIcon,
 } from "lucide-react";
 
@@ -17,6 +18,7 @@ const categoryIcon: Record<string, LucideIcon> = {
   "Custom Web Application": Wrench,
   "E-commerce Platform": ShoppingCart,
   "LMS Platform": GraduationCap,
+  "AI Chatbot / AI Integration": Bot,
 };
 
 export function ProjectCover({ project, index }: { project: Project; index: number }) {

@@ -11,6 +11,7 @@ const statusStyles: Record<Project["status"], string> = {
   Live: "text-bronze-300 border-bronze-500/30 bg-bronze-500/[0.06]",
   Delivered: "text-ink-300 border-ink-600 bg-ink-800/60",
   "Architecture & Planning": "text-ink-400 border-ink-700 bg-ink-900/60",
+  "In Progress": "text-bronze-200 border-bronze-400/40 bg-bronze-500/[0.08]",
 };
 
 export function ProjectCard({
@@ -46,10 +47,16 @@ export function ProjectCard({
         <div className="flex flex-wrap items-center gap-2">
           <span
             className={cn(
-              "rounded-full border px-3 py-1 font-mono text-[10px] uppercase tracking-[0.15em]",
+              "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 font-mono text-[10px] uppercase tracking-[0.15em]",
               statusStyles[project.status]
             )}
           >
+            {project.status === "In Progress" && (
+              <span className="relative flex h-1.5 w-1.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-bronze-300 opacity-70" />
+                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-bronze-300" />
+              </span>
+            )}
             {project.status}
           </span>
           <span className="text-xs text-ink-500">{project.industry}</span>

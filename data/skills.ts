@@ -36,12 +36,14 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     id: "integrations",
-    title: "Integrations",
-    description: "Connecting products to the tools that run a business.",
+    title: "Integrations & AI",
+    description: "Connecting products to the tools that run a business — including AI.",
     items: [
+      "OpenAI & LLM APIs",
+      "AI Chatbots",
+      "Prompt Engineering",
       "Payment Gateways",
       "WhatsApp Business API",
-      "OpenAI APIs",
       "Third-Party APIs",
       "CRM Integrations",
     ],

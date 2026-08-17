@@ -19,7 +19,7 @@ export type Project = {
   caseStudyUrl?: string;
   year: string;
   featured?: boolean;
-  status: "Live" | "Delivered" | "Architecture & Planning";
+  status: "Live" | "Delivered" | "Architecture & Planning" | "In Progress";
   gradient: [string, string];
 };
 

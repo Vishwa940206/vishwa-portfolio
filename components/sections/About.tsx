@@ -1,4 +1,4 @@
-import { GraduationCap, Award, Sparkles } from "lucide-react";
+import { GraduationCap, Award, Sparkles, Bot } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/Reveal";
 import { aboutParagraphs, certifications, education, focusAreas } from "@/data/about";
@@ -32,6 +32,9 @@ export function About() {
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-ink-700 px-4 py-1.5 text-xs font-medium text-ink-400">
                   Development Manager, Hype Insight Global
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-bronze-500/25 bg-bronze-500/[0.06] px-4 py-1.5 text-xs font-medium text-bronze-200">
+                  <Bot size={13} /> Building with AI — MortgageGPT
                 </span>
               </div>
             </Reveal>

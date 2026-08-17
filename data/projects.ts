@@ -2,6 +2,27 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "mortgagegpt",
+    title: "MortgageGPT",
+    category: "AI Chatbot / AI Integration",
+    industry: "FinTech · Mortgage",
+    summary:
+      "An AI-powered assistant that guides users through mortgage questions and workflows in natural language — currently in active development.",
+    description:
+      "Building an AI-powered mortgage assistant on Next.js, with an LLM-driven backend that turns natural-language questions into clear, guided answers on mortgage products and workflows. Actively in development as one of my current projects at the intersection of AI and full-stack engineering.",
+    role: "Full-Stack & AI Developer",
+    technologies: ["Next.js", "TypeScript", "OpenAI API", "LLM Integration"],
+    highlights: [
+      "Conversational AI interface for mortgage-related questions and workflows",
+      "LLM-driven backend built on top of a modern Next.js front end",
+      "Actively evolving — one of my current builds",
+    ],
+    status: "In Progress",
+    year: "2025 — Present",
+    featured: true,
+    gradient: ["#E9C393", "#3D2513"],
+  },
+  {
     slug: "inspire-college-management-platform",
     title: "Inspire — College Management Platform",
     category: "Education Platform",
@@ -123,5 +144,25 @@ export const projects: Project[] = [
     status: "Architecture & Planning",
     year: "2024",
     gradient: ["#B87333", "#241609"],
+  },
+  {
+    slug: "cinnamon",
+    title: "Cinnamon",
+    category: "Enterprise Website",
+    industry: "Enterprise · Corporate Web Platform",
+    summary:
+      "A WordPress and Laravel hybrid platform, wired up to multiple third-party APIs tested and documented in Postman.",
+    description:
+      "Built and maintained a WordPress and Laravel hybrid platform for Cinnamon, pairing a WordPress front end with a Laravel-powered backend and API layer. Integrated multiple third-party APIs, validating and documenting each one in Postman to keep data and services reliably in sync.",
+    role: "Full-Stack Developer",
+    technologies: ["WordPress", "Laravel", "PHP", "REST APIs", "Postman"],
+    highlights: [
+      "WordPress front end paired with a Laravel-powered backend and API layer",
+      "Multiple third-party API integrations tested and documented in Postman",
+      "Reliable data sync between CMS content and backend services",
+    ],
+    status: "Delivered",
+    year: "2023",
+    gradient: ["#DCA467", "#241609"],
   },
 ];
