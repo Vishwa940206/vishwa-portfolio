@@ -1,26 +1,183 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #07060a;
+  --foreground: #f3ede3;
+
+  /* Bronze accent scale */
+  --color-bronze-50: #fbf1e7;
+  --color-bronze-100: #f4dec2;
+  --color-bronze-200: #e9c393;
+  --color-bronze-300: #dca467;
+  --color-bronze-400: #cc8a4a;
+  --color-bronze-500: #b8763a;
+  --color-bronze-600: #9c5f2e;
+  --color-bronze-700: #7c4b26;
+  --color-bronze-800: #5a371c;
+  --color-bronze-900: #3d2513;
+  --color-bronze-950: #241609;
+
+  /* Near-black ink scale */
+  --color-ink-950: #050505;
+  --color-ink-900: #0a0908;
+  --color-ink-850: #0e0c0a;
+  --color-ink-800: #131110;
+  --color-ink-700: #1c1917;
+  --color-ink-600: #292420;
+  --color-ink-500: #3d362f;
+  --color-ink-400: #574d42;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-bronze-50: var(--color-bronze-50);
+  --color-bronze-100: var(--color-bronze-100);
+  --color-bronze-200: var(--color-bronze-200);
+  --color-bronze-300: var(--color-bronze-300);
+  --color-bronze-400: var(--color-bronze-400);
+  --color-bronze-500: var(--color-bronze-500);
+  --color-bronze-600: var(--color-bronze-600);
+  --color-bronze-700: var(--color-bronze-700);
+  --color-bronze-800: var(--color-bronze-800);
+  --color-bronze-900: var(--color-bronze-900);
+  --color-bronze-950: var(--color-bronze-950);
+
+  --color-ink-950: var(--color-ink-950);
+  --color-ink-900: var(--color-ink-900);
+  --color-ink-850: var(--color-ink-850);
+  --color-ink-800: var(--color-ink-800);
+  --color-ink-700: var(--color-ink-700);
+  --color-ink-600: var(--color-ink-600);
+  --color-ink-500: var(--color-ink-500);
+  --color-ink-400: var(--color-ink-400);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes marquee {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+* {
+  border-color: var(--color-ink-700);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-bronze-500);
+  color: var(--color-ink-950);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ink-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-ink-600);
+  border-radius: 999px;
+  border: 2px solid var(--color-ink-950);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bronze-700);
+}
+
+/* Bronze-tinted hairline grid, used behind hero and other sections */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(184, 118, 58, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(184, 118, 58, 0.08) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+.text-gradient-bronze {
+  background-image: linear-gradient(
+    120deg,
+    var(--color-bronze-200),
+    var(--color-bronze-400) 45%,
+    var(--color-bronze-500) 65%,
+    var(--color-bronze-200)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.glass-panel {
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.012)
+  );
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(233, 195, 147, 0.1);
+}
+
+.glow-ring {
+  box-shadow:
+    0 0 0 1px rgba(233, 195, 147, 0.12),
+    0 20px 60px -20px rgba(184, 118, 58, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
